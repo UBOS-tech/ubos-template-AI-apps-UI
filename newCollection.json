@@ -1,0 +1,555 @@
+[
+    {
+        "_id": "6426b6908740f01100000001",
+        "name": "JSObject1",
+        "pageId": "Main",
+        "organizationId": "Org",
+        "body": "export default {\nresult: [\n  {\n    id: \"Translate\",\n    name: \"Other languages to English\",\n    description: \"Translate text into English.\",\n    btn: \"Translate\",\n    color: \"#FF9800 \",\n    category: [\"Generation\", \"Transformation\", \"Translation\", \"All\"],\n  },\n  {\n    id: \"Chat\",\n    name: \"FRIEND chat\",\n    description: \"Emulate a text message conversation.\",\n    btn: \"Friend chat\",\n    color: \"#4CAF50\",\n    category: [\"Answers\", \"Conversation\", \"Generation\", \"All\"],\n  },\n  {\n    id: \"SQL\",\n    name: \"SQL translate.\",\n    description: \"Translate natural language to SQL queries.\",\n    btn: \"SQL translate\",\n    color: \"#FFEB3B\",\n    category: [\"Code\", \"Translation\", \"All\"],\n  },\n  {\n    id: \"FAQ\",\n    name: \"FACTUAL answering\",\n    description:\n      \"Direct the model to provide factual answers and address knowledge gaps.\",\n    btn: \"Factual answering\",\n    color: \"#9C27B0\",\n    category: [\n      \"Answers\",\n      \"Classification\",\n      \"Conversation\",\n      \"Generation\",\n      \"All\",\n    ],\n  },\n  {\n    id: \"Grammar\",\n    name: \"Grammar correction\",\n    description: \"Corrects sentences into standard English.\",\n    btn: \"Grammar correction\",\n    color: \"#ff751a\",\n    category: [\"Generation\", \"Transformation\", \"All\"],\n  },\n  {\n    id: \"Summarize\",\n    name: \"Summarize for a 2nd grader\",\n    description: \"Translates difficult text into simpler concepts.\",\n    btn: \"Summarize for a 2nd grader\",\n    color: \"#7094db\",\n    category: [\"Generation\", \"Transformation\", \"All\"],\n  },\n  {\n    id: \"AI tutor\",\n    name: \"AI language model tutor\",\n    description:\n      \"This is a QA-style chatbot that answers questions about language models.\",\n    btn: \"AI language model tutor\",\n    color: \"#009999\",\n    category: [\"Answers\", \"Conversation\", \"Generation\", \"All\"],\n  },\n  {\n    id: \"JavaScript chatbot\",\n    name: \"JavaScript helper chatbot\",\n    description:\n      \"This is a message-style chatbot that can answer questions about using JavaScript. It uses a few examples to get the conversation started.\",\n    btn: \"JavaScript helper chatbot\",\n    color: \"#99e699\",\n    category: [\"Answers\", \"Code\", \"Generation\", \"Answers\",\"All\"],\n  },\n  {\n    id: \"Movie to Emoji\",\n    name: \"Movie to Emoji\",\n    description: \"Convert movie titles into emoji.\",\n    btn: \"Movie to Emoji\",\n    color: \"#ff99bb\",\n    category: [\"Generation\", \"Transformation\", \"All\"],\n  },\n  {\n    id: \"Parse data\",\n    name: \"Parse unstructured data\",\n    description:\n      \"Create tables from long form text by specifying a structure and supplying some examples.\",\n    btn: \"Parse unstructured data\",\n    color: \"#9999ff\",\n    category: [\"Generation\", \"Transformation\", \"All\"],\n  },\n  {\n    id: \"Name generator\",\n    name: \"Product name generator\",\n    description:\n      \"Create product names from examples words. Influenced by a community prompt.\",\n    btn: \"Product name generator\",\n    color: \"\t#33bbff\",\n    category: [\"Generation\", \"All\"],\n  },\n  {\n    id: \"Python bug fixer\",\n    name: \"Python bug fixer\",\n    description:\n      \"There's a number of ways of structuring the prompt for checking for bugs. Here we add a comment suggesting that source code is buggy, and then ask codex to generate a fixed code.\",\n    btn: \"Python bug fixer\",\n    color: \"#ff4d4d\",\n    category: [\"Code\", \"Generation\", \"All\"],\n  },\n  {\n    id: \"Airport code\",\n    name: \"Airport code extractor\",\n    description: \"A simple prompt for extracting airport codes from text..\",\n    btn: \"Airport code extractor\",\n    color: \"#8cff66\",\n    category: [\"Generation\", \"Transformation\", \"All\"],\n  },\n  {\n    id: \"Interview questions\",\n    name: \"Interview questions\",\n    description: \"Create interview questions.\",\n    btn: \"Interview questions\",\n    color: \"#66d9ff\",\n    category: [\"Generation\", \"All\"],\n  },\n  {\n    id: \"Create study notes\",\n    name: \"Create study notes\",\n    description: \"Provide a topic and get study notes.\",\n    btn: \"Create study notes\",\n    color: \" #d98cb3\",\n    category: [\"Generation\", \"All\"],\n  },\n  {\n    id: \"Restaurant review\",\n    name: \"Restaurant review creator\",\n    description: \"Turn a few words into a restaurant review.\",\n    btn: \"Restaurant review creator\",\n    color: \" #80b3ff\",\n    category: [\"Generation\", \"All\"],\n  },\n  {\n    id: \"Turn by turn directions\",\n    name: \"Turn by turn directions\",\n    description: \"Convert natural language to turn-by-turn directions.\",\n    btn: \"Turn by turn directions\",\n    color: \"#b3b3ff\",\n    category: [\"Generation\", \"Transformation\", \"All\"],\n  },\n  {\n    id: \"Marv chat bot\",\n    name: \"Marv the sarcastic chat bot\",\n    description: \"Marv is a factual chatbot that is also sarcastic.\",\n    btn: \"Marv the sarcastic chat bot\",\n    color: \"#ff66ff\",\n    category: [\"Conversation\", \"Generation\", \"All\"],\n  },\n  {\n    id: \"Chat\",\n    name: \"Chat\",\n    description: \"Open ended conversation with an AI assistant.\",\n    btn: \"Chat\",\n    color: \"#adadeb\",\n    category: [\"Conversation\", \"Generation\", \"All\"],\n  },\n  {\n    id: \"Recipe creator\",\n    name: \"Recipe creator (eat at your own risk)\",\n    description: \"Create a recipe from a list of ingredients..\",\n    btn: \"Recipe creator\",\n    color: \"#b3f0ff\",\n    category: [\"Generation\", \"All\"],\n  },\n  {\n    id: \"Essay outline\",\n    name: \"Essay outline\",\n    description: \"Generate an outline for a research topic.\",\n    btn: \"Essay outline\",\n    color: \"#ffc266\",\n    category: [\"Generation\", \"All\"],\n  },\n  {\n    id: \"VR fitness idea\",\n    name: \"VR fitness idea generator\",\n    description: \"Create ideas for fitness and virtual reality games.\",\n    btn: \"VR fitness idea generator\",\n    color: \"#ffccff\",\n    category: [\"Generation\", \"All\"],\n  },\n  {\n    id: \"Natural language to OpenAI API\",\n    name: \"Natural language to OpenAI API\",\n    description: \"Create code to call the Stripe API using natural language.\",\n    btn: \"Natural language to OpenAI API\",\n    color: \"#ffc266\",\n    category: [\"Code\", \"Transformation\", \"All\"],\n  },\n  {\n    id: \"Text to command\",\n    name: \"Text to command\",\n    description: \"Translate text into programmatic commands.\",\n    btn: \"Text to command\",\n    color: \"#ffccff\",\n    category: [\"Generation\", \"Transformation\", \"All\"],\n  },\n  {\n    id: \"Calculate Time Complexity\",\n    name: \"Calculate Time Complexity\",\n    description: \"Find the time complexity of a function.\",\n    btn: \"Calculate Time Complexity\",\n    color: \"#9fdf9f\",\n    category: [\"Code\", \"Transformation\", \"All\"],\n  },\n  {\n    id: \"Keywords\",\n    name: \"Keywords\",\n    description:\n      \"Extract keywords from a block of text. At a lower temperature it picks keywords from the text.\",\n    btn: \"Keywords\",\n    color: \"#c2c2f0\",\n    category: [\"Classification\", \"Transformation\", \"All\"],\n  },\n  {\n    id: \"Extract contact information\",\n    name: \"Extract contact information\",\n    description: \"Extract contact information from a block of text.\",\n    btn: \"Extract contact information\",\n    color: \"#b3ffe6\",\n    category: [\"Generation\", \"Transformation\", \"All\"],\n  },\n  {\n    id: \"JavaScript to Python\",\n    name: \"JavaScript to Python\",\n    description: \"Convert simple JavaScript expressions into Python.\",\n    btn: \"JavaScript to Python\",\n    color: \"#ff99cc\",\n    category: [\"Code\", \"Transformation\", \"Translation\", \"All\"],\n  },\n  {\n    id: \"JavaScript one line function\",\n    name: \"JavaScript one line function\",\n    description: \"Turn a JavaScript function into a one liner.\",\n    btn: \"JavaScript one line function\",\n    color: \"#99ebff\",\n    category: [\"Code\", \"Transformation\", \"Translation\", \"All\"],\n  },\n  {\n    id: \"Micro horror story creator\",\n    name: \"Micro horror story creator\",\n    description:\n      \"Creates two to three sentence short horror stories from a topic input.\",\n    btn: \"Micro horror story creator\",\n    color: \"#ffb366\",\n    category: [\"Generation\", \"Transformation\", \"Translation\", \"All\"],\n  },\n  {\n    id: \"Third-person converter\",\n    name: \"Third-person converter\",\n    description:\n      \"Converts first-person POV to the third-person. This is modified from a community prompt to use fewer examples.\",\n    btn: \"Third-person converter\",\n    color: \"#ddccff\",\n    category: [\"Generation\", \"Transformation\", \"Translation\", \"All\"],\n  },\n  {\n    id: \"Notes to summary\",\n    name: \"Notes to summary\",\n    description: \"Turn meeting notes into a summary.\",\n    btn: \"Notes to summary\",\n    color: \"#ffff4d\",\n    category: [\"Generation\", \"Transformation\", \"All\"],\n  },\n\t {\n    id: \"Classification\",\n    name: \"Classification\",\n    description: \"Classify items into categories via example.\",\n    btn: \"Classification\",\n    color: \"#d5ff80\",\n    category: [\"Generation\", \"Transformation\", \"Classification\",\"All\"],\n  },\n\t {\n    id: \"Advanced tweet\",\n    name: \"Advanced tweet classifier\",\n    description: \"This is an advanced prompt for detecting sentiment. It allows you to provide it with a list of status updates and then provide a sentiment for each one.\",\n    btn: \"Advanced tweet classifier\",\n    color: \"#ffad33\",\n    category: [\"Generation\", \"Transformation\",\"Classification\", \"All\"],\n  },\n\t {\n    id: \"Tweet classifier\",\n    name: \"Tweet classifier\",\n    description: \"This is a basic prompt for detecting sentiment.\",\n    btn: \"Tweet classifier\",\n    color: \"#ff4d4d\",\n    category: [\"Generation\", \"Transformation\",\"Classification\", \"All\"],\n  },\n\t  {\n    id: \"TL DR summarization\",\n    name: \"TL DR summarization\",\n    description:\n      \"Summarize text by adding a 'tl;dr:' to the end of a text passage. It shows that the API understands how to perform a number of tasks with no instructions.\",\n    btn: \"TL DR summarization\",\n    color: \"#d9b3ff\",\n    category: [\"Generation\", \"Transformation\", \"All\"],\n  },\n],\n\n filteringBySearch :(array, search)=>{\n\t \n\t\n    const result = array.filter(e => {\n    const name = e.name.toLowerCase();\n    const searchElem = search.toLowerCase();\n    \n    return name.includes(searchElem)\n    });\nconsole.log(result)\n  return storeValue('array', result, false)\n},\n\nfilteringByCategory: (array, category) => {\n  let result = [];\n  if (category === \"All\") {\n    result = array;\n  } else {\n    result = array.filter((e) => e.category.includes(category) ? true : false);\n  }\n  return storeValue(\"array\", result, false);\n}\n}\n",
+        "variables": [
+            {
+                "name": "result",
+                "value": [
+                    {
+                        "id": "Translate",
+                        "name": "Other languages to English",
+                        "description": "Translate text into English.",
+                        "btn": "Translate",
+                        "color": "#FF9800 ",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "Translation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Chat",
+                        "name": "FRIEND chat",
+                        "description": "Emulate a text message conversation.",
+                        "btn": "Friend chat",
+                        "color": "#4CAF50",
+                        "category": [
+                            "Answers",
+                            "Conversation",
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "SQL",
+                        "name": "SQL translate.",
+                        "description": "Translate natural language to SQL queries.",
+                        "btn": "SQL translate",
+                        "color": "#FFEB3B",
+                        "category": [
+                            "Code",
+                            "Translation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "FAQ",
+                        "name": "FACTUAL answering",
+                        "description": "Direct the model to provide factual answers and address knowledge gaps.",
+                        "btn": "Factual answering",
+                        "color": "#9C27B0",
+                        "category": [
+                            "Answers",
+                            "Classification",
+                            "Conversation",
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Grammar",
+                        "name": "Grammar correction",
+                        "description": "Corrects sentences into standard English.",
+                        "btn": "Grammar correction",
+                        "color": "#ff751a",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Summarize",
+                        "name": "Summarize for a 2nd grader",
+                        "description": "Translates difficult text into simpler concepts.",
+                        "btn": "Summarize for a 2nd grader",
+                        "color": "#7094db",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "AI tutor",
+                        "name": "AI language model tutor",
+                        "description": "This is a QA-style chatbot that answers questions about language models.",
+                        "btn": "AI language model tutor",
+                        "color": "#009999",
+                        "category": [
+                            "Answers",
+                            "Conversation",
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "JavaScript chatbot",
+                        "name": "JavaScript helper chatbot",
+                        "description": "This is a message-style chatbot that can answer questions about using JavaScript. It uses a few examples to get the conversation started.",
+                        "btn": "JavaScript helper chatbot",
+                        "color": "#99e699",
+                        "category": [
+                            "Answers",
+                            "Code",
+                            "Generation",
+                            "Answers",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Movie to Emoji",
+                        "name": "Movie to Emoji",
+                        "description": "Convert movie titles into emoji.",
+                        "btn": "Movie to Emoji",
+                        "color": "#ff99bb",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Parse data",
+                        "name": "Parse unstructured data",
+                        "description": "Create tables from long form text by specifying a structure and supplying some examples.",
+                        "btn": "Parse unstructured data",
+                        "color": "#9999ff",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Name generator",
+                        "name": "Product name generator",
+                        "description": "Create product names from examples words. Influenced by a community prompt.",
+                        "btn": "Product name generator",
+                        "color": "\t#33bbff",
+                        "category": [
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Python bug fixer",
+                        "name": "Python bug fixer",
+                        "description": "There's a number of ways of structuring the prompt for checking for bugs. Here we add a comment suggesting that source code is buggy, and then ask codex to generate a fixed code.",
+                        "btn": "Python bug fixer",
+                        "color": "#ff4d4d",
+                        "category": [
+                            "Code",
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Airport code",
+                        "name": "Airport code extractor",
+                        "description": "A simple prompt for extracting airport codes from text..",
+                        "btn": "Airport code extractor",
+                        "color": "#8cff66",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Interview questions",
+                        "name": "Interview questions",
+                        "description": "Create interview questions.",
+                        "btn": "Interview questions",
+                        "color": "#66d9ff",
+                        "category": [
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Create study notes",
+                        "name": "Create study notes",
+                        "description": "Provide a topic and get study notes.",
+                        "btn": "Create study notes",
+                        "color": " #d98cb3",
+                        "category": [
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Restaurant review",
+                        "name": "Restaurant review creator",
+                        "description": "Turn a few words into a restaurant review.",
+                        "btn": "Restaurant review creator",
+                        "color": " #80b3ff",
+                        "category": [
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Turn by turn directions",
+                        "name": "Turn by turn directions",
+                        "description": "Convert natural language to turn-by-turn directions.",
+                        "btn": "Turn by turn directions",
+                        "color": "#b3b3ff",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Marv chat bot",
+                        "name": "Marv the sarcastic chat bot",
+                        "description": "Marv is a factual chatbot that is also sarcastic.",
+                        "btn": "Marv the sarcastic chat bot",
+                        "color": "#ff66ff",
+                        "category": [
+                            "Conversation",
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Chat",
+                        "name": "Chat",
+                        "description": "Open ended conversation with an AI assistant.",
+                        "btn": "Chat",
+                        "color": "#adadeb",
+                        "category": [
+                            "Conversation",
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Recipe creator",
+                        "name": "Recipe creator (eat at your own risk)",
+                        "description": "Create a recipe from a list of ingredients..",
+                        "btn": "Recipe creator",
+                        "color": "#b3f0ff",
+                        "category": [
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Essay outline",
+                        "name": "Essay outline",
+                        "description": "Generate an outline for a research topic.",
+                        "btn": "Essay outline",
+                        "color": "#ffc266",
+                        "category": [
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "VR fitness idea",
+                        "name": "VR fitness idea generator",
+                        "description": "Create ideas for fitness and virtual reality games.",
+                        "btn": "VR fitness idea generator",
+                        "color": "#ffccff",
+                        "category": [
+                            "Generation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Natural language to OpenAI API",
+                        "name": "Natural language to OpenAI API",
+                        "description": "Create code to call the Stripe API using natural language.",
+                        "btn": "Natural language to OpenAI API",
+                        "color": "#ffc266",
+                        "category": [
+                            "Code",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Text to command",
+                        "name": "Text to command",
+                        "description": "Translate text into programmatic commands.",
+                        "btn": "Text to command",
+                        "color": "#ffccff",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Calculate Time Complexity",
+                        "name": "Calculate Time Complexity",
+                        "description": "Find the time complexity of a function.",
+                        "btn": "Calculate Time Complexity",
+                        "color": "#9fdf9f",
+                        "category": [
+                            "Code",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Keywords",
+                        "name": "Keywords",
+                        "description": "Extract keywords from a block of text. At a lower temperature it picks keywords from the text.",
+                        "btn": "Keywords",
+                        "color": "#c2c2f0",
+                        "category": [
+                            "Classification",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Extract contact information",
+                        "name": "Extract contact information",
+                        "description": "Extract contact information from a block of text.",
+                        "btn": "Extract contact information",
+                        "color": "#b3ffe6",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "JavaScript to Python",
+                        "name": "JavaScript to Python",
+                        "description": "Convert simple JavaScript expressions into Python.",
+                        "btn": "JavaScript to Python",
+                        "color": "#ff99cc",
+                        "category": [
+                            "Code",
+                            "Transformation",
+                            "Translation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "JavaScript one line function",
+                        "name": "JavaScript one line function",
+                        "description": "Turn a JavaScript function into a one liner.",
+                        "btn": "JavaScript one line function",
+                        "color": "#99ebff",
+                        "category": [
+                            "Code",
+                            "Transformation",
+                            "Translation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Micro horror story creator",
+                        "name": "Micro horror story creator",
+                        "description": "Creates two to three sentence short horror stories from a topic input.",
+                        "btn": "Micro horror story creator",
+                        "color": "#ffb366",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "Translation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Third-person converter",
+                        "name": "Third-person converter",
+                        "description": "Converts first-person POV to the third-person. This is modified from a community prompt to use fewer examples.",
+                        "btn": "Third-person converter",
+                        "color": "#ddccff",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "Translation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Notes to summary",
+                        "name": "Notes to summary",
+                        "description": "Turn meeting notes into a summary.",
+                        "btn": "Notes to summary",
+                        "color": "#ffff4d",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Classification",
+                        "name": "Classification",
+                        "description": "Classify items into categories via example.",
+                        "btn": "Classification",
+                        "color": "#d5ff80",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "Classification",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Advanced tweet",
+                        "name": "Advanced tweet classifier",
+                        "description": "This is an advanced prompt for detecting sentiment. It allows you to provide it with a list of status updates and then provide a sentiment for each one.",
+                        "btn": "Advanced tweet classifier",
+                        "color": "#ffad33",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "Classification",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "Tweet classifier",
+                        "name": "Tweet classifier",
+                        "description": "This is a basic prompt for detecting sentiment.",
+                        "btn": "Tweet classifier",
+                        "color": "#ff4d4d",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "Classification",
+                            "All"
+                        ]
+                    },
+                    {
+                        "id": "TL DR summarization",
+                        "name": "TL DR summarization",
+                        "description": "Summarize text by adding a 'tl;dr:' to the end of a text passage. It shows that the API understands how to perform a number of tasks with no instructions.",
+                        "btn": "Summarization",
+                        "color": "#d9b3ff",
+                        "category": [
+                            "Generation",
+                            "Transformation",
+                            "All"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "_id": "642ab4b421890f00116f429e",
+                "name": "filteringBySearch",
+                "collectionId": "6426b6908740f01100000001",
+                "executeOnLoad": false,
+                "pageId": "Main",
+                "organizationId": "Org",
+                "actionConfiguration": {
+                    "body": "(array, search)=>{\n\t \n\t\n    const result = array.filter(e => {\n    const name = e.name.toLowerCase();\n    const searchElem = search.toLowerCase();\n    \n    return name.includes(searchElem)\n    });\nconsole.log(result)\n  return storeValue('array', result, false)\n}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [
+                        {
+                            "name": "array"
+                        },
+                        {
+                            "name": "search"
+                        }
+                    ],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "applicationId": "marketplace",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "organizationId": "Org",
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.filteringBySearch",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "(array, search)=>{\n\t\n    const result = array.filter(e => {\n    const name = e.name.toLowerCase();\n    const searchElem = search.toLowerCase();\n    \n    return name.includes(searchElem)\n    });\n  return result\n}"
+                ],
+                "pluginType": "JS",
+                "id": "642ab4b421890f00116f429e"
+            },
+            {
+                "_id": "642ab4b421890f00116f429f",
+                "name": "filteringByCategory",
+                "collectionId": "6426b6908740f01100000001",
+                "executeOnLoad": false,
+                "pageId": "Main",
+                "organizationId": "Org",
+                "actionConfiguration": {
+                    "body": "(array, category) => {\n  let result = [];\n  if (category === \"All\") {\n    result = array;\n  } else {\n    result = array.filter((e) => e.category.includes(category) ? true : false);\n  }\n  return storeValue(\"array\", result, false);\n}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [
+                        {
+                            "name": "array"
+                        },
+                        {
+                            "name": "category"
+                        }
+                    ],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "applicationId": "marketplace",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "organizationId": "Org",
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.filteringByCategory",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "(array, category)=>{\n    const result= array.filter(e => e.category === category);\n    return result\n}"
+                ],
+                "pluginType": "JS",
+                "id": "642ab4b421890f00116f429f"
+            }
+        ],
+        "applicationId": "marketplace",
+        "pluginType": "JS",
+        "id": "6426b6908740f01100000001",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": [],
+        "pluginId": "JS",
+        "workspaceId": "Org"
+    }
+]
