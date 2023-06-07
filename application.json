@@ -1,0 +1,3404 @@
+{
+    "_id": "642410f0dbe27c1200000002",
+    "name": "marketplace",
+    "slug": "marketplace",
+    "organizationId": "Org",
+    "isPublic": true,
+    "isMenu": false,
+    "createdAt": "2023-06-07T08:44:30.366Z",
+    "updatedAt": "2023-06-07T08:44:30.366Z",
+    "deleted": false,
+    "pages": [
+        {
+            "_id": "Main",
+            "isDefault": true
+        },
+        {
+            "_id": "Translate",
+            "isDefault": false
+        },
+        {
+            "_id": "Friend chat",
+            "isDefault": false
+        },
+        {
+            "_id": "Factual answering",
+            "isDefault": false
+        },
+        {
+            "_id": "SQL translate",
+            "isDefault": false
+        },
+        {
+            "_id": "Grammar correction",
+            "isDefault": false
+        },
+        {
+            "_id": "Summarize for a 2nd grader",
+            "isDefault": false
+        },
+        {
+            "_id": "AI language model tutor",
+            "isDefault": false
+        },
+        {
+            "_id": "JavaScript helper chatbot",
+            "isDefault": false
+        },
+        {
+            "_id": "Movie to Emoji",
+            "isDefault": false
+        },
+        {
+            "_id": "Parse unstructured data",
+            "isDefault": false
+        },
+        {
+            "_id": "Product name generator",
+            "isDefault": false
+        },
+        {
+            "_id": "Python bug fixer",
+            "isDefault": false
+        },
+        {
+            "_id": "Airport code extractor",
+            "isDefault": false
+        },
+        {
+            "_id": "Interview questions",
+            "isDefault": false
+        },
+        {
+            "_id": "Create study notes",
+            "isDefault": false
+        },
+        {
+            "_id": "Restaurant review creator",
+            "isDefault": false
+        },
+        {
+            "_id": "Turn by turn directions",
+            "isDefault": false
+        },
+        {
+            "_id": "Marv the sarcastic chat bot",
+            "isDefault": false
+        },
+        {
+            "_id": "Chat",
+            "isDefault": false
+        },
+        {
+            "_id": "Recipe creator",
+            "isDefault": false
+        },
+        {
+            "_id": "Essay outline",
+            "isDefault": false
+        },
+        {
+            "_id": "VR fitness idea generator",
+            "isDefault": false
+        },
+        {
+            "_id": "Natural language to OpenAI API",
+            "isDefault": false
+        },
+        {
+            "_id": "Text to command",
+            "isDefault": false
+        },
+        {
+            "_id": "Calculate Time Complexity",
+            "isDefault": false
+        },
+        {
+            "_id": "Keywords",
+            "isDefault": false
+        },
+        {
+            "_id": "TL DR summarization",
+            "isDefault": false
+        },
+        {
+            "_id": "Extract contact information",
+            "isDefault": false
+        },
+        {
+            "_id": "JavaScript one line function",
+            "isDefault": false
+        },
+        {
+            "_id": "JavaScript to Python",
+            "isDefault": false
+        },
+        {
+            "_id": "Micro horror story creator",
+            "isDefault": false
+        },
+        {
+            "_id": "Third-person converter",
+            "isDefault": false
+        },
+        {
+            "_id": "Notes to summary",
+            "isDefault": false
+        },
+        {
+            "_id": "Classification",
+            "isDefault": false
+        },
+        {
+            "_id": "Tweet classifier",
+            "isDefault": false
+        },
+        {
+            "_id": "Advanced tweet classifier",
+            "isDefault": false
+        }
+    ],
+    "policies": [
+        {
+            "permission": "makePublic:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "read:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "publish:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:applications",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "global_setting": {
+        "css": ""
+    },
+    "settings_data": {
+        "httpIns": [
+            {
+                "label": "GET |  | /getCatalog",
+                "value": {
+                    "url": "/getCatalog",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createNotification",
+                "value": {
+                    "url": "/createNotification",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "DELETE |  | /deleteNotification",
+                "value": {
+                    "url": "/deleteNotification",
+                    "method": "delete",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getNotifications",
+                "value": {
+                    "url": "/getNotifications",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /addCommand",
+                "value": {
+                    "url": "/addCommand",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createCompany",
+                "value": {
+                    "url": "/createCompany",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getCompanies",
+                "value": {
+                    "url": "/getCompanies",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /updateCompany",
+                "value": {
+                    "url": "/updateCompany",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /showFile",
+                "value": {
+                    "url": "/showFile",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getWeather",
+                "value": {
+                    "url": "/getWeather",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getMenu",
+                "value": {
+                    "url": "/getMenu",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /postUser",
+                "value": {
+                    "url": "/postUser",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getCompaniesForRecruit",
+                "value": {
+                    "url": "/getCompaniesForRecruit",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /nexmo",
+                "value": {
+                    "url": "/nexmo",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createJob",
+                "value": {
+                    "url": "/createJob",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getJobs",
+                "value": {
+                    "url": "/getJobs",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /updateJob",
+                "value": {
+                    "url": "/updateJob",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "DELETE |  | /deleteJob",
+                "value": {
+                    "url": "/deleteJob",
+                    "method": "delete",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /uploadResumeFile",
+                "value": {
+                    "url": "/uploadResumeFile",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createCandidate",
+                "value": {
+                    "url": "/createCandidate",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getCandidate",
+                "value": {
+                    "url": "/getCandidate",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /updateCandidate",
+                "value": {
+                    "url": "/updateCandidate",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /moveToEmployees",
+                "value": {
+                    "url": "/moveToEmployees",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /deleteCandidate",
+                "value": {
+                    "url": "/deleteCandidate",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getEmplpyees",
+                "value": {
+                    "url": "/getEmplpyees",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /addEmployee",
+                "value": {
+                    "url": "/addEmployee",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /updateEmployee",
+                "value": {
+                    "url": "/updateEmployee",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /deleteEmployee",
+                "value": {
+                    "url": "/deleteEmployee",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /timeOffInfo",
+                "value": {
+                    "url": "/timeOffInfo",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /test",
+                "value": {
+                    "url": "/test",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createItem",
+                "value": {
+                    "url": "/createItem",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getweather",
+                "value": {
+                    "url": "/getweather",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getWeather2",
+                "value": {
+                    "url": "/getWeather2",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /total",
+                "value": {
+                    "url": "/total",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getInfoAboutUser/:id",
+                "value": {
+                    "url": "/getInfoAboutUser/:id",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /product",
+                "value": {
+                    "url": "/product",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getBody",
+                "value": {
+                    "url": "/getBody",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /img",
+                "value": {
+                    "url": "/img",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /fm/upload/image",
+                "value": {
+                    "url": "/fm/upload/image",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /fm/list/image",
+                "value": {
+                    "url": "/fm/list/image",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /fm/remove/image",
+                "value": {
+                    "url": "/fm/remove/image",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /fm/rename/image",
+                "value": {
+                    "url": "/fm/rename/image",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getPDF",
+                "value": {
+                    "url": "/getPDF",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createNote",
+                "value": {
+                    "url": "/createNote",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /updateNote",
+                "value": {
+                    "url": "/updateNote",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "DELETE |  | /deleteNote",
+                "value": {
+                    "url": "/deleteNote",
+                    "method": "delete",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getNotes",
+                "value": {
+                    "url": "/getNotes",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /sendNoteToTelegram",
+                "value": {
+                    "url": "/sendNoteToTelegram",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getTagsList",
+                "value": {
+                    "url": "/getTagsList",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getRecipesList",
+                "value": {
+                    "url": "/getRecipesList",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://back-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "640dac70d1ac410011da8821",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "back",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "back",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://back-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "back627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /generateColor",
+                "value": {
+                    "url": "/generateColor",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createTranslate",
+                "value": {
+                    "url": "/createTranslate",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createFriendChat",
+                "value": {
+                    "url": "/createFriendChat",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createFactualAnswering",
+                "value": {
+                    "url": "/createFactualAnswering",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createSQLtranslate",
+                "value": {
+                    "url": "/createSQLtranslate",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createGrammarCorrection",
+                "value": {
+                    "url": "/createGrammarCorrection",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createSummarize",
+                "value": {
+                    "url": "/createSummarize",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createModelTutor",
+                "value": {
+                    "url": "/createModelTutor",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createJavaScriptBot",
+                "value": {
+                    "url": "/createJavaScriptBot",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createMovieToEmoji",
+                "value": {
+                    "url": "/createMovieToEmoji",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createProductName",
+                "value": {
+                    "url": "/createProductName",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createParseData",
+                "value": {
+                    "url": "/createParseData",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createPythonFixer",
+                "value": {
+                    "url": "/createPythonFixer",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createInterviewQuestions",
+                "value": {
+                    "url": "/createInterviewQuestions",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createCreateStudyNotes",
+                "value": {
+                    "url": "/createCreateStudyNotes",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createRestaurantReview",
+                "value": {
+                    "url": "/createRestaurantReview",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createTurnDirections",
+                "value": {
+                    "url": "/createTurnDirections",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createMarvSarcastic",
+                "value": {
+                    "url": "/createMarvSarcastic",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createChat",
+                "value": {
+                    "url": "/createChat",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createRecipeCreator",
+                "value": {
+                    "url": "/createRecipeCreator",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createEssayOutline",
+                "value": {
+                    "url": "/createEssayOutline",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createAirportCode",
+                "value": {
+                    "url": "/createAirportCode",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createVRfitness",
+                "value": {
+                    "url": "/createVRfitness",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createNaturalLanguage",
+                "value": {
+                    "url": "/createNaturalLanguage",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createTextToCommand",
+                "value": {
+                    "url": "/createTextToCommand",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createCalculateComplexity",
+                "value": {
+                    "url": "/createCalculateComplexity",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createKeywords",
+                "value": {
+                    "url": "/createKeywords",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createTL_DRsummarization",
+                "value": {
+                    "url": "/createTL_DRsummarization",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createExtractInformation",
+                "value": {
+                    "url": "/createExtractInformation",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createJavaScript1Line",
+                "value": {
+                    "url": "/createJavaScript1Line",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createJavaScript2Python",
+                "value": {
+                    "url": "/createJavaScript2Python",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createMicroHorror",
+                "value": {
+                    "url": "/createMicroHorror",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createThirdPersoConverter",
+                "value": {
+                    "url": "/createThirdPersoConverter",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createNotesSummary",
+                "value": {
+                    "url": "/createNotesSummary",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "64258e6dd1ac410011da884d",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "marketback",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "marketback",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "marketback627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /saveCredentials",
+                "value": {
+                    "url": "/saveCredentials",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://templates-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "641af3fbd1ac410011da8836",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "templates",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "templates",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://templates-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "templates627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /saveContent",
+                "value": {
+                    "url": "/saveContent",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://templates-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "641af3fbd1ac410011da8836",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "templates",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "templates",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://templates-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "templates627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getCredentials",
+                "value": {
+                    "url": "/getCredentials",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://templates-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "641af3fbd1ac410011da8836",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "templates",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "templates",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://templates-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "templates627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getContent",
+                "value": {
+                    "url": "/getContent",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://templates-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "641af3fbd1ac410011da8836",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "templates",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "templates",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://templates-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "templates627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /demo",
+                "value": {
+                    "url": "/demo",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://templates-627e69c2cd5a3f150000000b.ubos.tech"
+                        },
+                        "id": "641af3fbd1ac410011da8836",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "templates",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "read:service",
+                            "manage:service"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "templates",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://templates-627e69c2cd5a3f150000000b.ubos.tech",
+                            "serviceId": "templates627e69c2cd5a3f150000000bubraine",
+                            "applicationId": "627e69c2cd5a3f150000000b",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "function_dsl": [],
+    "version": "V1",
+    "gitApplicationMetadata": {
+        "browserSupportedRemoteUrl": "https://github.com/fenota-viktoriya/uiapptemplates",
+        "defaultApplicationId": "marketplace",
+        "defaultBranchName": "main",
+        "isRepoPrivate": true,
+        "remoteUrl": "git@github.com:fenota-viktoriya/uiapptemplates.git",
+        "repoName": "uiapptemplates"
+    }
+}

@@ -1,0 +1,3291 @@
+[
+    {
+        "_id": "6425abc6dbe27c120000000c",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-03-30T15:33:26.122Z",
+        "updatedAt": "2023-04-07T09:44:03.677Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "generateColor",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "https://marketback-627e69c2cd5a3f150000000b.ubos.tech"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Mood to color",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/generateColor",
+                "body": "{\n\t\"prompt\":\"{{main.store.prompt.prompt_field}}\"\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.store.prompt.prompt_field"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "6426e19e8740f01100000002",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-03-31T13:35:26.482Z",
+        "updatedAt": "2023-06-07T08:51:40.476Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_translate",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createTranslate"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Translate",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "64289da28740f01100000005",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-01T21:09:54.237Z",
+        "updatedAt": "2023-06-05T12:21:47.576Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_friendChat",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createFriendChat"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Friend chat",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "6429579e8740f01100000008",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-02T10:23:26.451Z",
+        "updatedAt": "2023-06-05T14:19:45.363Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_FactualAnswering",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createFactualAnswering"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Factual answering",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "6429d4468740f0110000000b",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-02T19:15:18.039Z",
+        "updatedAt": "2023-06-05T15:02:16.367Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_SQLtranslate",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createSQLtranslate"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "SQL translate",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642ab4b421890f00116f429e",
+        "name": "filteringBySearch",
+        "collectionId": "6426b6908740f01100000001",
+        "executeOnLoad": false,
+        "pageId": "Main",
+        "organizationId": "Org",
+        "actionConfiguration": {
+            "body": "(array, search)=>{\n\t \n\t\n    const result = array.filter(e => {\n    const name = e.name.toLowerCase();\n    const searchElem = search.toLowerCase();\n    \n    return name.includes(searchElem)\n    });\nconsole.log(result)\n  return storeValue('array', result, false)\n}",
+            "isAsync": false,
+            "timeoutInMillisecond": 10000,
+            "jsArguments": [
+                {
+                    "name": "array"
+                },
+                {
+                    "name": "search"
+                }
+            ],
+            "paginationType": "NONE",
+            "encodeParamsToggle": true
+        },
+        "applicationId": "marketplace",
+        "datasource": {
+            "isValid": true,
+            "messages": [],
+            "name": "UNUSED_DATASOURCE",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "",
+            "userPermissions": []
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "fullyQualifiedName": "JSObject1.filteringBySearch",
+        "isValid": true,
+        "jsonPathKeys": [
+            "(array, search)=>{\n\t\n    const result = array.filter(e => {\n    const name = e.name.toLowerCase();\n    const searchElem = search.toLowerCase();\n    \n    return name.includes(searchElem)\n    });\n  return result\n}"
+        ],
+        "pluginType": "JS",
+        "id": "642ab4b421890f00116f429e"
+    },
+    {
+        "_id": "642ab4b421890f00116f429f",
+        "name": "filteringByCategory",
+        "collectionId": "6426b6908740f01100000001",
+        "executeOnLoad": false,
+        "pageId": "Main",
+        "organizationId": "Org",
+        "actionConfiguration": {
+            "body": "(array, category) => {\n  let result = [];\n  if (category === \"All\") {\n    result = array;\n  } else {\n    result = array.filter((e) => e.category.includes(category) ? true : false);\n  }\n  return storeValue(\"array\", result, false);\n}",
+            "isAsync": false,
+            "timeoutInMillisecond": 10000,
+            "jsArguments": [
+                {
+                    "name": "array"
+                },
+                {
+                    "name": "category"
+                }
+            ],
+            "paginationType": "NONE",
+            "encodeParamsToggle": true
+        },
+        "applicationId": "marketplace",
+        "datasource": {
+            "isValid": true,
+            "messages": [],
+            "name": "UNUSED_DATASOURCE",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "",
+            "userPermissions": []
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "fullyQualifiedName": "JSObject1.filteringByCategory",
+        "isValid": true,
+        "jsonPathKeys": [
+            "(array, category)=>{\n    const result= array.filter(e => e.category === category);\n    return result\n}"
+        ],
+        "pluginType": "JS",
+        "id": "642ab4b421890f00116f429f"
+    },
+    {
+        "_id": "642afbbe8740f01100000010",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-03T16:15:58.062Z",
+        "updatedAt": "2023-06-05T15:11:52.381Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_GrammarCorrection",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createGrammarCorrection"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Grammar correction",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642b37f48740f01100000013",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-03T20:32:52.223Z",
+        "updatedAt": "2023-06-05T15:24:06.284Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_Summarize",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createSummarize "
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Summarize for a 2nd grader",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\": {{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642b3b668740f01100000016",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-03T20:47:34.490Z",
+        "updatedAt": "2023-06-05T21:59:30.646Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_modalTutor",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createModelTutor"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "AI language model tutor",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\": {{JSON.stringify(Input_prompt.text)}},\n\t\"key\": {{JSON.stringify(Input1.text)}}\n}",
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642b41538740f01100000019",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-03T21:12:51.676Z",
+        "updatedAt": "2023-06-05T21:59:23.163Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_JavaScriptBot",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createJavaScriptBot"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "JavaScript helper chatbot",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\": {{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642b46878740f0110000001c",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-03T21:35:03.832Z",
+        "updatedAt": "2023-06-05T21:59:14.973Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_MovieToEmoji",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createMovieToEmoji"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Movie to Emoji",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\": {{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642bf1b98740f01100000029",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T09:45:29.092Z",
+        "updatedAt": "2023-06-06T09:13:35.593Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_ProductName",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createProductName"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Product name generator",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)",
+                "main.env.back"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642bf6e38740f0110000002a",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T10:07:31.362Z",
+        "updatedAt": "2023-06-06T09:13:42.358Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_parseData",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createParseData"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Parse unstructured data",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)",
+                "main.env.back"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c22c08740f0110000002b",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T13:14:40.461Z",
+        "updatedAt": "2023-06-06T09:13:13.337Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createInterviewQuestions",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createInterviewQuestions"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Interview questions",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "application/json"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "",
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c28018c32231100000001",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T13:37:05.982Z",
+        "updatedAt": "2023-06-06T09:13:28.834Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_pythonFixer",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createPythonFixer"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Python bug fixer",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\": {{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c2b078c32231100000002",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T13:49:59.428Z",
+        "updatedAt": "2023-06-06T09:19:58.232Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createCreateStudyNotes",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createCreateStudyNotes"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Create study notes",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "application/json"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\": {{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c2c148c32231100000003",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T13:54:28.135Z",
+        "updatedAt": "2023-06-06T09:18:20.639Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_AirportCode",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createAirportCode"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Airport code extractor",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c2ef38c32231100000004",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T14:06:43.889Z",
+        "updatedAt": "2023-06-06T15:47:47.930Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createRestaurantReview",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createRestaurantReview"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Restaurant review creator",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)",
+                "main.env.back"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c31398c32231100000009",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T14:16:25.729Z",
+        "updatedAt": "2023-06-06T15:47:33.867Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createTurnDirections",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createTurnDirections"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Turn by turn directions",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\": {{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)",
+                "main.env.back"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c313f8c3223110000000a",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T14:16:31.207Z",
+        "updatedAt": "2023-06-06T15:48:59.670Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createMarvSarcastic",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createMarvSarcastic"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Marv the sarcastic chat bot",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c33888c32231100000011",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T14:26:16.519Z",
+        "updatedAt": "2023-06-06T15:50:11.955Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createChat",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createChat"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Chat",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c338b8c32231100000012",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T14:26:19.809Z",
+        "updatedAt": "2023-06-06T10:39:38.066Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createRecipeCreator",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createRecipeCreator\n"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Recipe creator",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c33908c32231100000013",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T14:26:24.286Z",
+        "updatedAt": "2023-06-06T16:19:48.226Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createEssayOutline",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createEssayOutline"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Essay outline",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c35588c32231100000016",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T14:34:00.668Z",
+        "updatedAt": "2023-06-06T16:20:58.715Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_VRfitness",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createVRfitness"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "VR fitness idea generator",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c39b08c32231100000019",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T14:52:32.550Z",
+        "updatedAt": "2023-06-06T16:20:09.653Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createNaturalLanguage",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createNaturalLanguage"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Natural language to OpenAI API",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642c47018c32231100000028",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-04T15:49:21.895Z",
+        "updatedAt": "2023-06-06T16:47:44.398Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createJavaScript1Line",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createJavaScript1Line"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "JavaScript one line function",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642d190d8c32231100000029",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-05T06:45:33.461Z",
+        "updatedAt": "2023-06-06T16:20:26.286Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createTextToCommand",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createTextToCommand"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Text to command",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642d1b568c3223110000002a",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-05T06:55:18.365Z",
+        "updatedAt": "2023-06-06T16:46:46.691Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createKeywords",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createKeywords"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Keywords",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642d1b6a8c3223110000002b",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-05T06:55:38.024Z",
+        "updatedAt": "2023-06-06T16:47:22.314Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createTL_DRsummarization",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createTL_DRsummarization"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "TL DR summarization",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642d1b9b8c3223110000002c",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-05T06:56:27.502Z",
+        "updatedAt": "2023-06-06T16:46:32.464Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createCalculateComplexity",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createCalculateComplexity"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Calculate Time Complexity",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "application/json"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642d1bda8c3223110000002d",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-05T06:57:30.215Z",
+        "updatedAt": "2023-06-06T16:51:17.690Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createExtractInformation",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createExtractInformation"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Extract contact information",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642d1bee8c3223110000002e",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-05T06:57:50.806Z",
+        "updatedAt": "2023-06-06T19:33:28.237Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createJavaScript2Python",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createJavaScript2Python"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "JavaScript to Python",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642d2cbc8c32231100000035",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-05T08:09:32.872Z",
+        "updatedAt": "2023-06-06T19:33:44.139Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createMicroHorror",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createMicroHorror"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Micro horror story creator",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "application/json"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642d2d4c8c32231100000036",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-05T08:11:56.350Z",
+        "updatedAt": "2023-06-06T19:34:06.667Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createThirdPersoConverter",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createThirdPersoConverter"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Third-person converter",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\": {{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642d2d6e8c32231100000037",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-05T08:12:30.558Z",
+        "updatedAt": "2023-06-06T20:02:09.143Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "createNotesSummary",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createNotesSummary"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Notes to summary",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\": {{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)",
+                "main.env.back"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642e871b8c3223110000003a",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-06T08:47:23.027Z",
+        "updatedAt": "2023-06-06T19:41:38.832Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_classification",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createClassification"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Classification",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642e8a0c8c3223110000003d",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-06T08:59:56.419Z",
+        "updatedAt": "2023-06-06T19:40:22.195Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_tweet",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createTweet"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Tweet classifier",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "642e8bf08c32231100000040",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-04-06T09:08:00.209Z",
+        "updatedAt": "2023-06-06T19:36:40.158Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "create_AdvancedTweet",
+            "datasource": {
+                "invalids": [],
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/createAdvancedTweet"
+                },
+                "isValid": true,
+                "name": "DEFAULT_REST_DATASOURCE",
+                "new": true,
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Advanced tweet classifier",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"text\":{{JSON.stringify(Input_prompt.text)}},\n\t\"key\":{{JSON.stringify(Input1.text)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input_prompt.text)",
+                "JSON.stringify(Input1.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    },
+    {
+        "_id": "6470d38a56839a00124ca963",
+        "name": "myFun2",
+        "pageId": "Page1",
+        "organizationId": "Org",
+        "executeOnLoad": false,
+        "actionConfiguration": {
+            "body": "async () => {\n\t\t//use async-await or promises\n\t}",
+            "isAsync": true,
+            "timeoutInMillisecond": 10000,
+            "jsArguments": [],
+            "paginationType": "NONE",
+            "encodeParamsToggle": true
+        },
+        "clientSideExecution": true,
+        "collectionId": "6470d38a9fca3d1200000003",
+        "applicationId": "marketplace",
+        "datasource": {
+            "isValid": true,
+            "messages": [],
+            "name": "UNUSED_DATASOURCE",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "",
+            "userPermissions": []
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "fullyQualifiedName": "JSObject1.myFun2",
+        "isValid": true,
+        "jsonPathKeys": [
+            "async () => {\n\t\t//use async-await or promises\n\t}"
+        ],
+        "pluginType": "JS",
+        "id": "6470d38a56839a00124ca963"
+    },
+    {
+        "_id": "647f12409fca3d1200000006",
+        "applicationId": "marketplace",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "createdAt": "2023-06-06T11:02:24.645Z",
+        "updatedAt": "2023-06-06T11:04:13.985Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ],
+        "Action": {
+            "name": "Api1",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/test"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "organizationId": "Org",
+                "messages": [],
+                "userPermissions": [],
+                "new": true
+            },
+            "executeOnLoad": false,
+            "pageId": "Page1",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"isfalse\": {{JSON.stringify(Input1.text)}},\n\t\"istrue\": {{JSON.stringify(Input2.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(Input1.text)",
+                "JSON.stringify(Input2.text)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        }
+    }
+]
